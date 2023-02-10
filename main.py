@@ -52,3 +52,14 @@ class Solver:
     # Converts user input into an array/python list
     def turnToList(self):
         outputList = []
+
+        for row in range(9):
+            nestedList = []
+            for column in range(9):
+                if self.entries[column + (row * 9)].get() == "":
+                    nestedList.append(0)
+                else:
+                    nestedList.append(int(self.entries[column + (row * 9)].get()))
+            outputList.append(nestedList)
+
+        return outputList
