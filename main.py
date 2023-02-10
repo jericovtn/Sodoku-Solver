@@ -48,3 +48,7 @@ class Solver:
         topFrame.grid(column=5, row=0)
         topFrame2.grid(column=4, row=0)
         topFrame3.grid(column=6, row=0)
+
+    # Converts user input into an array/python list
+    def turnToList(self):
+        outputList = []
