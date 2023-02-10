@@ -99,3 +99,10 @@ class Solver:
             if number == num:
                 return True
         return False
+
+    # If number exists in its column
+    def inColumn(self, number, boardInput, indexes):
+        for row in boardInput:
+            if row[indexes[1]] == number:
+                return True
+        return False 
