@@ -128,3 +128,17 @@ class Solver:
             if self.validInput(number, boardInput, indexes):
                 
                 boardInput[indexes[0]][indexes[1]] = number
+
+                # Updates color change if visual
+                if visual:
+                    self.entries[(indexes[0] * 9 + indexes[1])].configure(foreground="red", highlightbackground="green")
+                    self.entries[(indexes[0] * 9 + indexes[1])].insert(0, number)
+                    root.update()
+                    self.entries[(indexes[0] * 9 + indexes[1])].configure(foreground="red", highlightbackground="white")
+                
+                else:
+                    self.entries[(indexes[0] * 9 + indexes[1])].configure(foreground="red")
+                    self.entries[(indexes[0] * 9 + indexes[1])].insert(0, number)
+                
+                self.stack.append(indexes)
+                return indexes
