@@ -35,4 +35,12 @@ class Solver:
         topFrame2 = tkinter.Frame(master)
         topFrame3 = tkinter.Frame(master)
 
-                
+        solveButton = tkinter.Button(topFrame, text="SOLVE", command=self.solve)
+        solveButton.pack()
+        
+        visualButton = tkinter.Button(topFrame2, text="VISUAL", command=self.visualbacktrack)
+        visualButton.pack()
+
+        resetButton = tkinter.Button(topFrame3, text="CLEAR", command=self.reset)
+        resetButton.pack()
+   
