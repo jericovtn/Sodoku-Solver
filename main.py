@@ -106,3 +106,17 @@ class Solver:
             if row[indexes[1]] == number:
                 return True
         return False 
+
+    # If number exists in the square of itself
+    def inSquare(self, number, boardInput, indexes):
+        botX = (indexes[0] // 3) * 3
+        topX = ((indexes[0] // 3) * 3) + 3
+                  
+        botY = (indexes[1] // 3) * 3
+        topY = ((indexes[1] // 3) * 3) + 3
+
+        for x in range(botX, topX):
+            for y in range(botY, topY):
+                if boardInput[x][y] == number:
+                    return True
+        return False
