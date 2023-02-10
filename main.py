@@ -5,8 +5,8 @@
 from collections import deque
 import tkinter
 
-root = tkinter.Tk
-root.title("SodokuSolver")
+root = tkinter.Tk()
+root.title("Sodoku Solver")
 
 class Solver:
     def __init__(self, master):
@@ -64,7 +64,7 @@ class Solver:
 
         return outputList   
 
-    # Backtracking
+    # Backtracking Method
     def pickEmpty(self, inputBoard, vis):
         self.stack = deque()
         rowIndex = 0
