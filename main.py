@@ -90,3 +90,5 @@ class Solver:
         if (not self.inColumn(number, boardInput, indexes) and not self.inRow(number, boardInput, indexes) and not self.inSquare(number, boardInput, indexes)):
             return True
         return False
+
+    # HELPER FUNCTIONS FOR validInput
