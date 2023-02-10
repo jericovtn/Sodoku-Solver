@@ -92,3 +92,10 @@ class Solver:
         return False
 
     # HELPER FUNCTIONS FOR validInput
+
+    # If number exists in its row
+    def inRow(self, number, boardInput, indexes):
+        for num in boardInput[indexes[0]]:
+            if number == num:
+                return True
+        return False
