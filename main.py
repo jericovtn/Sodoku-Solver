@@ -142,3 +142,5 @@ class Solver:
                 
                 self.stack.append(indexes)
                 return indexes
+                
+        return self.backtrack(boardInput, visual)
