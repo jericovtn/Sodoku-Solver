@@ -151,3 +151,7 @@ class Solver:
 
         # Stores previous wrong value
         prevVal = boardinp[lastWrong[0]][lastWrong[1]]
+
+        # Resets last wrong to 0 + deltes from GUI
+        boardinp[lastWrong[0]][lastWrong[1]] = 0
+        self.entries[lastWrong[0] * 9 + lastWrong[1]].delete(0, tkinter.END)    
