@@ -30,4 +30,9 @@ class Solver:
                 
                 self.entries.append(e)
 
+        # Creates buttons 
+        topFrame = tkinter.Frame(master)
+        topFrame2 = tkinter.Frame(master)
+        topFrame3 = tkinter.Frame(master)
+
                 
