@@ -148,3 +148,6 @@ class Solver:
     # Backtrack
     def backtrack(self, boardinp, vis):
         lastWrong = self.stack.pop()
+
+        # Stores previous wrong value
+        prevVal = boardinp[lastWrong[0]][lastWrong[1]]
