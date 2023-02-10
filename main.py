@@ -142,5 +142,9 @@ class Solver:
                 
                 self.stack.append(indexes)
                 return indexes
-                
+
         return self.backtrack(boardInput, visual)
+
+    # Backtrack
+    def backtrack(self, boardinp, vis):
+        lastWrong = self.stack.pop()
