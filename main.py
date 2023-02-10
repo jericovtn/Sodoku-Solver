@@ -8,4 +8,11 @@ import tkinter
 root = tkinter.Tk
 root.title("SodokuSolver")
 
+class Solver:
+    def __init__(self, master):
+        
+        # Initializing Objects
+        self.cells = {}
+        self.entries = []
 
+        
