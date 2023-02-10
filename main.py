@@ -43,4 +43,8 @@ class Solver:
 
         resetButton = tkinter.Button(topFrame3, text="CLEAR", command=self.reset)
         resetButton.pack()
-   
+
+        # Grids
+        topFrame.grid(column=5, row=0)
+        topFrame2.grid(column=4, row=0)
+        topFrame3.grid(column=6, row=0)
