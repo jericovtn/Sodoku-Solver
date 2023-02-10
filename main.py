@@ -179,3 +179,5 @@ class Solver:
             value.configure(foreground="black")
 
 ye = Solver(root)
+
+root.mainloop() 
