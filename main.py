@@ -84,3 +84,9 @@ class Solver:
 
                 columnIndex += 1
             rowIndex += 1
+
+    # If number does not exist in row, column, or square
+    def validInput(self, number, boardInput, indexes):
+        if (not self.inColumn(number, boardInput, indexes) and not self.inRow(number, boardInput, indexes) and not self.inSquare(number, boardInput, indexes)):
+            return True
+        return False
