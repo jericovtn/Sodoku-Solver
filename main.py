@@ -120,3 +120,11 @@ class Solver:
                 if boardInput[x][y] == number:
                     return True
         return False
+
+    # trynum Method
+    def trynum(self, indexes, start, boardInput, visual):
+        
+        for number in range(start, 10):
+            if self.validInput(number, boardInput, indexes):
+                
+                boardInput[indexes[0]][indexes[1]] = number
