@@ -178,3 +178,4 @@ class Solver:
             value.delete(0, tkinter.END)
             value.configure(foreground="black")
 
+ye = Solver(root)
