@@ -157,3 +157,7 @@ class Solver:
         self.entries[lastWrong[0] * 9 + lastWrong[1]].delete(0, tkinter.END)    
 
         return self.trynum(lastWrong, prevVal + 1, boardinp, vis)
+
+    # Is board valid
+    def isBoardValid(self, userBoard):
+        return True
