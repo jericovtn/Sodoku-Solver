@@ -1,12 +1,12 @@
 # Name: Jerico James F. Viteño
-# Final Project: Sodoku Solver
+# Final Project: Sudoku Solver
 # February 18, 2023
 
 from collections import deque
 import tkinter
 
 root = tkinter.Tk()
-root.title("Sodoku Solver")
+root.title("Sudoku Solver")
 
 class Solver:
     def __init__(self, master):
