@@ -161,3 +161,20 @@ class Solver:
     # Is board valid
     def isBoardValid(self, userBoard):
         return True
+
+    # Normal Solve
+    def solve(self):
+        if self.isBoardValid("Not Finished"):
+            self.pickEmpty(self.turnToList(), False)
+
+    # Visual Solve
+    def visualbacktrack(self):
+        if self.isBoardValid("Not Finished"):
+            self.pickEmpty(self.turnToList(), True)
+
+    # Reset Board
+    def reset(self):
+        for value in self.entries:
+            value.delete(0, tkinter.END)
+            value.configure(foreground="black")
+
